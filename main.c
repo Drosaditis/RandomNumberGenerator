@@ -8,7 +8,7 @@ long int nextRand(long int seed,long int a,long int c,long int m){
 }
 
 long int randomNumber(int n){
-    long int a=11035245,c=123945,m=pow(2,31),seed=163341;
+    long int a=11035245,c=123945,m=pow(2,16),seed=163341;
     return nextRand(seed,a,c,m)*n;
 }
 
